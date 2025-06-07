@@ -7,30 +7,67 @@
 format_version = 1
 
 # Optional multi-line message to be shown to users when just starting with the exercises.
-welcome_message = """Welcome to these third-party Rustlings exercises."""
+welcome_message = """Selamat datang di latihan Rustlings dari pihak ketiga ini."""
+
 
 # Optional multi-line message to be shown to users after finishing all exercises.
-final_message = """We hope that you found the exercises helpful :D"""
+final_message = """Kami harap latihan ini bermanfaat untuk Anda :D"""
 
 # Repeat this section for every exercise.
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
-name = "???"
+name = "intro1"
+dir = "00_intro"
+test = false
+hint = """Untuk lanjut ke latihan berikutnya, ketik `n` lalu tekan ENTER.\nJika belum berpindah, coba periksa apakah kamu sudah menekan ENTER setelah mengetik `n`."""
+skip_check_unsolved = true
 
-# Optional directory name to be provided if you want to organize exercises in directories.
-# If `dir` is specified, the exercise path is `exercises/DIR/NAME.rs`
-# Otherwise, the path is `exercises/NAME.rs`
-# dir = "???"
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "intro2"
+dir = "00_intro"
+test = false
+hint = """Makro yang digunakan untuk mencetak teks belum dikenali oleh kompiler.\nPeriksa kembali penulisannya — apakah sudah sesuai dengan yang didukung Rust?\nPesan error di terminal biasanya menunjukkan saran penulisan yang benar."""
 
-# Rustlings expects the exercise to contain tests and run them.
-# You can optionally disable testing by setting `test` to `false` (the default is `true`).
-# In that case, the exercise will be considered done when it just successfully compiles.
-# test = true
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "variables1"
+dir = "01_variables"
+test = false
+hint = """Rust mengharuskan variabel dideklarasikan sebelum digunakan.\nPerhatikan apakah kamu sudah menuliskan kata kunci yang benar sebelum nama variabel."""
 
-# Rustlings will always run Clippy on exercises.
-# You can optionally set `strict_clippy` to `true` (the default is `false`) to only consider
-# the exercise as done when there are no warnings left.
-# strict_clippy = false
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "variables2"
+dir = "01_variables"
+test = false
+hint = """Rust tidak mengizinkan penggunaan variabel sebelum diberi nilai.\nCoba beri nilai awal pada `x` saat deklarasi — bagaimana jika nilainya 10?\nApakah program dapat berjalan tanpa error setelah itu?"""
 
-# A multi-line hint to be shown to users on request.
-hint = """???"""
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "variables3"
+dir = "01_variables"
+test = false
+hint = """Variabel `x` sudah dideklarasikan tetapi belum memiliki nilai.\nRust tidak mengizinkan membaca variabel yang belum diinisialisasi.\nCoba beri nilai awal pada `x` saat deklarasi, misalnya angka bulat seperti 42, lalu jalankan kembali programnya."""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "variables4"
+dir = "01_variables"
+test = false
+hint = """Secara default, variabel di Rust bersifat *immutable* (tidak dapat diubah).\nNamun pada kode ini, variabel `x` dicoba untuk diubah nilainya setelah dideklarasikan.\nCoba cari tahu bagaimana cara menjadikan `x` sebagai variabel *mutable* (dapat diubah) dengan menambahkan satu kata kunci saat deklarasi."""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "variables5"
+dir = "01_variables"
+test = false
+hint = """Pada latihan `variables4`, kamu telah belajar membuat variabel menjadi *mutable* (dapat diubah) agar nilainya bisa diganti.\nNamun di latihan ini, masalahnya bukan pada perubahan nilai, melainkan perubahan tipe.\nRust tidak mengizinkan mengubah tipe variabel setelah dideklarasikan.\nUntuk kasus seperti ini, Rust menyediakan fitur bernama *shadowing* (penimpaan variabel).\nCoba cari tahu bagaimana cara mendeklarasikan ulang variabel dengan nama yang sama.\nPelajari lebih lanjut tentang *shadowing* di dokumentasi resmi:\nhttps://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#shadowing"""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "variables6"
+dir = "01_variables"
+test = false
+hint = """Rust memiliki jenis nilai khusus bernama *konstanta* yang dideklarasikan dengan kata kunci `const`.\nBerbeda dengan variabel (`let`), konstanta selalu bersifat *immutable* (tidak dapat diubah) dan wajib memiliki anotasi tipe secara eksplisit.\nPastikan kamu sudah menyertakan tipe data saat mendeklarasikan konstanta.\nPenjelasan lengkap tentang perbedaan variabel dan konstanta dapat dibaca di sini:\nhttps://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#constants"""
+
