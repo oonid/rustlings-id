@@ -130,3 +130,44 @@ name = "quiz1"
 dir = "quizzes"
 hint = """Tidak ada hint untuk kuis ini ;)"""
 
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "primitive_types1"
+dir = "04_primitive_types"
+test = false
+hint = """Gunakan operator `!` untuk membalik nilai boolean.\nContoh: `!true == false`, dan `!is_morning` bisa digunakan untuk membuat `is_evening`."""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "primitive_types2"
+dir = "04_primitive_types"
+test = false
+hint = """Gunakan tanda petik tunggal `'` untuk mendeklarasikan satu karakter.\nContoh: `'a'`, `'9'`, `'@'`, `'🦀'`.\nPastikan kamu mengisi variabel `your_character` dengan satu karakter valid."""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "primitive_types3"
+dir = "04_primitive_types"
+test = false
+hint = """Rust memiliki notasi singkat untuk membuat array besar, misalnya `[angka; jumlah]` akan mengulang nilai sebanyak jumlah tersebut.\nContoh: `[7; 100]` akan membuat array berisi seratus angka 7.\nCoba buat `a.len() >= 100` bernilai true dengan cara ini."""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "primitive_types4"
+dir = "04_primitive_types"
+hint = """Topik slice dijelaskan lebih lanjut di Rust Book: https://doc.rust-lang.org/book/ch04-03-slices.html\nUntuk mengambil sebagian elemen dari array, gunakan notasi `&array[start..end]`, di mana `start` disertakan dan `end` tidak disertakan.\nKenapa `assert_eq!` membandingkan dengan `[2, 3, 4]` (tanpa `&`)? Karena `&a[start..end]` adalah referensi (slice), dan `assert_eq!` melakukan *coercion* secara otomatis.\nPenjelasan: https://doc.rust-lang.org/nomicon/coercions.html"""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "primitive_types5"
+dir = "04_primitive_types"
+test = false
+hint = """Topik tuple dibahas di Rust Book: https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type\nGunakan pola seperti `(name, age) = tuple` untuk mengurai isi tuple menjadi variabel-variabel yang bisa digunakan."""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "primitive_types6"
+dir = "04_primitive_types"
+hint = """Kamu bisa mengakses elemen tuple menggunakan indeks, misalnya `tuple.1` untuk elemen kedua.\nBaca lebih lanjut tentang tuple di Rust Book: https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type"""
+
+
