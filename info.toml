@@ -170,4 +170,17 @@ name = "primitive_types6"
 dir = "04_primitive_types"
 hint = """Kamu bisa mengakses elemen tuple menggunakan indeks, misalnya `tuple.1` untuk elemen kedua.\nBaca lebih lanjut tentang tuple di Rust Book: https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type"""
 
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "vecs1"
+dir = "05_vecs"
+hint = """Di Rust, kamu bisa membuat vektor dengan dua cara:\n1. Menggunakan `Vec::new()` lalu `.push()` tiap elemen\n2. Atau cara lebih ringkas, dengan makro `vec![]` jika kamu sudah tahu nilai awalnya.\nUntuk kasus ini, gunakan `vec![10, 20, 30, 40]`.\nLihat dokumentasi: https://doc.rust-lang.org/book/ch08-01-vectors.html"""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "vecs2"
+dir = "05_vecs"
+hint = "Fungsi pertama menggunakan loop dan .push() untuk membuat vektor.\nFungsi kedua menggunakan .iter().map(...).collect() untuk membentuk vektor dari hasil transformasi.\nCoba eksplorasi mana yang menurutmu lebih idiomatik dalam Rust.\nLihat dokumentasi: https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.map"
+
+
 
