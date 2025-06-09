@@ -106,4 +106,27 @@ dir = "02_functions"
 test = false
 hint = """Ini adalah kesalahan umum di Rust dan bisa diperbaiki hanya dengan menghapus satu karakter.\nRust membedakan antara *ekspresi* (yang mengembalikan nilai) dan *pernyataan* (yang tidak).\nFungsi `square` seharusnya mengembalikan nilai `i32`, tapi saat ini justru mengembalikan `()`.\nAda dua cara untuk memperbaikinya:\n1. Tambahkan kata kunci `return`\n2. Atau, hapus titik koma di akhir baris `num * num`"""
 
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "if1"
+dir = "03_if"
+hint = """Rust memungkinkan kamu menulis logika percabangan dalam satu baris menggunakan ekspresi `if`.\nMirip dengan pola di bahasa lain seperti: C++ `a > b ? a : b` atau Python `a if a > b else b`.\nIngat:\n- Kondisi `if` tidak perlu tanda kurung.\n- Blok `if` dan `else` harus pakai `{}`.\n- Karena `if` adalah ekspresi, kamu bisa langsung menggunakannya untuk menghasilkan nilai."""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "if2"
+dir = "03_if"
+hint = """Rust mengharuskan semua jalur percabangan `if`, `else if`, dan `else` mengembalikan tipe data yang sama.\nPerhatikan bahwa `picky_eater` harus selalu mengembalikan `&str`, tapi salah satu jalur masih mengembalikan tipe lain.\nBaca bagian pengujian (tests) untuk memahami nilai apa yang diharapkan untuk setiap jenis makanan."""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "if3"
+dir = "03_if"
+hint = """Rust mengharuskan semua cabang `if` (`if`, `else if`, dan `else`) menghasilkan nilai dengan tipe data yang sama.\nPeriksa kembali apakah semua bagian dalam ekspresi `if` yang mengatur nilai `identifier` sudah konsisten tipenya."""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "quiz1"
+dir = "quizzes"
+hint = """Tidak ada hint untuk kuis ini ;)"""
 
