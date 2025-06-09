@@ -71,3 +71,39 @@ dir = "01_variables"
 test = false
 hint = """Rust memiliki jenis nilai khusus bernama *konstanta* yang dideklarasikan dengan kata kunci `const`.\nBerbeda dengan variabel (`let`), konstanta selalu bersifat *immutable* (tidak dapat diubah) dan wajib memiliki anotasi tipe secara eksplisit.\nPastikan kamu sudah menyertakan tipe data saat mendeklarasikan konstanta.\nPenjelasan lengkap tentang perbedaan variabel dan konstanta dapat dibaca di sini:\nhttps://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#constants"""
 
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "functions1"
+dir = "02_functions"
+test = false
+hint = """Fungsi `call_me` dipanggil di dalam `main`, tetapi belum didefinisikan di mana pun.\nDari cara pemanggilannya, tampak bahwa fungsi ini tidak memerlukan argumen dan tidak mengembalikan nilai.\nStrukturnya akan mirip seperti `main` — coba pikirkan bagaimana fungsi seperti itu dituliskan di Rust."""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "functions2"
+dir = "02_functions"
+test = false
+hint = """Di Rust, tipe data untuk setiap parameter fungsi harus dituliskan secara eksplisit.\nPerhatikan bahwa pada fungsi `call_me`, parameter `num` belum memiliki tipe di dalam bagian signature-nya."""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "functions3"
+dir = "02_functions"
+test = false
+hint = """Tidak ada masalah pada deklarasi fungsi, tetapi perhatikan kembali cara fungsi `call_me` dipanggil.\nApakah sudah sesuai dengan jumlah argumen yang dibutuhkan?"""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "functions4"
+dir = "02_functions"
+test = false
+hint = """Pesan error menunjukkan bahwa fungsi `sale_price` belum memiliki anotasi tipe setelah tanda `->`.\nCoba bandingkan dengan fungsi `is_even`, yang sudah memiliki tipe nilai kembalian secara eksplisit."""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
+name = "functions5"
+dir = "02_functions"
+test = false
+hint = """Ini adalah kesalahan umum di Rust dan bisa diperbaiki hanya dengan menghapus satu karakter.\nRust membedakan antara *ekspresi* (yang mengembalikan nilai) dan *pernyataan* (yang tidak).\nFungsi `square` seharusnya mengembalikan nilai `i32`, tapi saat ini justru mengembalikan `()`.\nAda dua cara untuk memperbaikinya:\n1. Tambahkan kata kunci `return`\n2. Atau, hapus titik koma di akhir baris `num * num`"""
+
+
