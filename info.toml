@@ -108,6 +108,13 @@ hint = """Ini adalah kesalahan umum di Rust dan bisa diperbaiki hanya dengan men
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
+name = "functions6_closure"
+dir = "02_functions"
+test = false
+hint = """Closure di Rust didefinisikan dengan sintaks `|param| expression`,\nmisalnya `|x: i32| x + 2` adalah fungsi anonim yang mengambil i32 lalu menambahkan 2.\nDari contoh tersebut sesuaikan untuk fungsi square."""
+
+[[exercises]]
+# Exercise name which is the exercise file name without the `.rs` extension.
 name = "if1"
 dir = "03_if"
 hint = """Rust memungkinkan kamu menulis logika percabangan dalam satu baris menggunakan ekspresi `if`.\nMirip dengan pola di bahasa lain seperti: C++ `a > b ? a : b` atau Python `a if a > b else b`.\nIngat:\n- Kondisi `if` tidak perlu tanda kurung.\n- Blok `if` dan `else` harus pakai `{}`.\n- Karena `if` adalah ekspresi, kamu bisa langsung menggunakannya untuk menghasilkan nilai."""

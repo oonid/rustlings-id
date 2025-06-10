@@ -26,6 +26,8 @@ bin = [
   { name = "functions4_sol", path = "solutions/02_functions/functions4.rs" },
   { name = "functions5", path = "exercises/02_functions/functions5.rs" },
   { name = "functions5_sol", path = "solutions/02_functions/functions5.rs" },
+  { name = "functions6_closure", path = "exercises/02_functions/functions6_closure.rs" },
+  { name = "functions6_closure_sol", path = "solutions/02_functions/functions6_closure.rs" },
   { name = "if1", path = "exercises/03_if/if1.rs" },
   { name = "if1_sol", path = "solutions/03_if/if1.rs" },
   { name = "if2", path = "exercises/03_if/if2.rs" },

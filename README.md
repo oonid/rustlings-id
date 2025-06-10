@@ -30,7 +30,7 @@ cd rustlings-id
 
 Mulai belajar dengan:
 ```bash
-rustlings watch
+rustlings
 ```
 
 Perintah ini akan terus memantau progresmu dan memberikan umpan balik langsung saat kamu menyelesaikan soal.
@@ -40,9 +40,13 @@ Perintah ini akan terus memantau progresmu dan memberikan umpan balik langsung s
 ## 🧠 Tentang Latihan
 
 * Setiap soal berada di dalam folder `exercises/`
+* Gunakan perintah `rustlings run` untuk mencoba latihan yang spesifik
 * Kamu akan diminta memperbaiki error atau melengkapi kode
-* Jalankan perintah `rustlings hint` jika butuh bantuan
-* Untuk mengecek progres, gunakan `rustlings verify`
+* Untuk bantuan, ada perintah `rustlings hint`
+
+### Tambahan Latihan
+
+* [functions6_closure](https://github.com/oonid/rustlings-id/blob/master/exercises/02_functions/functions6_closure.rs)
 
 ---
 
